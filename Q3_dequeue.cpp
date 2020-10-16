@@ -25,7 +25,7 @@ public:
     }
     void push_back(gt x) {
         if(full()) {
-            grow(capacity+init_cap);
+            grow(capacity*2);
         }
         if(ft==-1) {
             ft = 0;
@@ -51,7 +51,7 @@ public:
     }
     void push_front(gt x) {
         if(full()) {
-            grow(capacity+init_cap);
+            grow(capacity*2);
            
         }
         if(ft==-1) {
